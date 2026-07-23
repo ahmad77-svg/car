@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Premium cars and professional automotive services."
+  >
+
+  <title>Prestige Motors | Premium Cars & Service</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =========================
+       شاشة التحميل
+  ========================== -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <span>P</span>
+      </div>
+
+      <p>PRESTIGE MOTORS</p>
+
+      <div class="loader-line">
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================
+       Header
+  ========================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+
+      <a href="#home" class="logo" aria-label="Prestige Motors">
+        <div class="logo-icon">P</div>
+
+        <div class="logo-text">
+          <strong>PRESTIGE</strong>
+          <span>MOTORS</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#home" class="nav-link active" data-i18n="navHome">
+          Home
+        </a>
+
+        <a href="#about" class="nav-link" data-i18n="navAbout">
+          About
+        </a>
+
+        <a href="#cars" class="nav-link" data-i18n="navCars">
+          Cars
+        </a>
+
+        <a href="#services" class="nav-link" data-i18n="navServices">
+          Services
+        </a>
+
+        <a href="#contact" class="nav-link" data-i18n="navContact">
+          Contact
+        </a>
+      </nav>
+
+      <div class="nav-actions">
+
+        <!-- اختيار اللغة -->
+        <div class="language-switcher">
+          <button
+            class="language-button"
+            id="languageButton"
+            type="button"
+            aria-label="Select language"
+          >
+            <i class="fa-solid fa-globe"></i>
+
+            <span id="currentLanguage">English</span>
+
+            <i class="fa-solid fa-chevron-down language-arrow"></i>
+          </button>
+
+          <div class="language-menu" id="languageMenu">
+            <button
+              class="language-option active"
+              type="button"
+              data-lang="en"
+            >
+              <span class="language-code">EN</span>
+              <span>English</span>
+            </button>
+
+            <button
+              class="language-option"
+              type="button"
+              data-lang="ar"
+            >
+              <span class="language-code">AR</span>
+              <span>العربية</span>
+            </button>
+          </div>
+        </div>
+
+        <a href="#contact" class="nav-contact-button">
+          <span data-i18n="bookNow">Book Now</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Open menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =========================
+         Hero
+    ========================== -->
+    <section class="hero" id="home">
+
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="images/hero.jpg"
+      >
+        <source src="vedio/hero.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero-overlay"></div>
+      <div class="hero-light"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content reveal">
+
+          <div class="hero-badge">
+            <span class="badge-line"></span>
+            <span data-i18n="heroBadge">
+              Premium Automotive Experience
+            </span>
+          </div>
+
+          <h1>
+            <span data-i18n="heroTitleOne">
+              Drive Beyond
+            </span>
+
+            <span class="gold-text" data-i18n="heroTitleTwo">
+              Expectations.
+            </span>
+          </h1>
+
+          <p data-i18n="heroDescription">
+            Discover carefully selected premium vehicles and professional
+            automotive services, built around quality, trust and performance.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#cars" class="primary-button">
+              <span data-i18n="exploreCars">
+                Explore Cars
+              </span>
+
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#services" class="secondary-button">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+
+              <span data-i18n="bookService">
+                Book a Service
+              </span>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-bottom">
+        <div class="container hero-bottom-content">
+
+          <div class="hero-info">
+            <div>
+              <span data-i18n="openingLabel">Opening Hours</span>
+              <strong data-i18n="openingValue">
+                Mon – Sat, 08:00 – 18:00
+              </strong>
+            </div>
+
+            <div>
+              <span data-i18n="locationLabel">Location</span>
+              <strong data-i18n="locationValue">
+                Netherlands
+              </strong>
+            </div>
+          </div>
+
+          <a href="#about" class="scroll-down">
+            <span data-i18n="scrollText">Scroll to discover</span>
+
+            <div class="scroll-mouse">
+              <span></span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </section>
+
+    <!-- =========================
+         About
+    ========================== -->
+    <section class="about section" id="about">
+      <div class="container about-grid">
+
+        <div class="about-images reveal">
+          <div class="about-main-image">
+            <img
+              src="images/معرض 1.jpg"
+              alt="Luxury car showroom"
+            >
+          </div>
+
+          <div class="about-small-image">
+            <img
+              src="images/كراج 1.jpg"
+              alt="Professional car workshop"
+            >
+          </div>
+
+          <div class="experience-card">
+            <strong>15+</strong>
+            <span data-i18n="yearsExperience">
+              Years of Experience
+            </span>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+
+          <div class="section-label">
+            <span></span>
+            <p data-i18n="aboutLabel">About Us</p>
+          </div>
+
+          <h2 data-i18n="aboutTitle">
+            More Than a Dealership. A Complete Automotive Experience.
+          </h2>
+
+          <p class="about-description" data-i18n="aboutDescription">
+            We bring premium vehicle sales and professional automotive
+            maintenance together in one trusted destination. Every vehicle
+            is carefully selected and every service is performed with
+            attention to quality and detail.
+          </p>
+
+          <div class="about-features">
+
+            <div class="about-feature">
+              <div class="feature-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+
+              <div>
+                <h3 data-i18n="aboutFeatureOneTitle">
+                  Quality You Can Trust
+                </h3>
+
+                <p data-i18n="aboutFeatureOneText">
+                  Carefully selected vehicles and transparent service.
+                </p>
+              </div>
+            </div>
+
+            <div class="about-feature">
+              <div class="feature-icon">
+                <i class="fa-solid fa-gears"></i>
+              </div>
+
+              <div>
+                <h3 data-i18n="aboutFeatureTwoTitle">
+                  Professional Workshop
+                </h3>
+
+                <p data-i18n="aboutFeatureTwoText">
+                  Skilled technicians and modern diagnostic equipment.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="#contact" class="text-button">
+            <span data-i18n="learnMore">Contact Our Team</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+         Statistics
+    ========================== -->
+    <section class="statistics">
+      <div class="container statistics-grid">
+
+        <div class="stat-item reveal">
+          <strong class="counter" data-target="500">0</strong>
+          <span>+</span>
+          <p data-i18n="statVehicles">Vehicles Sold</p>
+        </div>
+
+        <div class="stat-item reveal">
+          <strong class="counter" data-target="15">0</strong>
+          <span>+</span>
+          <p data-i18n="statExperience">Years Experience</p>
+        </div>
+
+        <div class="stat-item reveal">
+          <strong class="counter" data-target="1200">0</strong>
+          <span>+</span>
+          <p data-i18n="statCustomers">Happy Customers</p>
+        </div>
+
+        <div class="stat-item reveal">
+          <strong class="counter" data-target="98">0</strong>
+          <span>%</span>
+          <p data-i18n="statSatisfaction">Customer Satisfaction</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         Cars
+    ========================== -->
+    <section class="cars section" id="cars">
+      <div class="container">
+
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-label">
+              <span></span>
+              <p data-i18n="carsLabel">Available Vehicles</p>
+            </div>
+
+            <h2 data-i18n="carsTitle">
+              Find the Car That Matches Your Ambition.
+            </h2>
+          </div>
+
+          <p data-i18n="carsDescription">
+            Explore a handpicked selection of premium vehicles,
+            chosen for quality, comfort and performance.
+          </p>
+        </div>
+
+        <div class="cars-grid">
+
+          <!-- Car 1 -->
+          <article class="car-card reveal">
+            <div class="car-image">
+              <img src="images/1.jpg" alt="Audi RS6 Avant">
+
+              <span class="car-status" data-i18n="available">
+                Available
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Add to favorites"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="car-content">
+              <div class="car-heading">
+                <div>
+                  <span class="car-brand">Audi</span>
+                  <h3>Audi RS6 Avant</h3>
+                </div>
+
+                <strong data-i18n="priceOnRequest">
+                  Price on request
+                </strong>
+              </div>
+
+              <div class="car-specifications">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  2023
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gauge-high"></i>
+                  35,000 km
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gears"></i>
+                  <span data-i18n="automatic">Automatic</span>
+                </span>
+              </div>
+
+              <a href="#contact" class="car-details-button">
+                <span data-i18n="requestDetails">
+                  Request Details
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Car 2 -->
+          <article class="car-card reveal">
+            <div class="car-image">
+              <img src="images/2.jpg" alt="Audi TT Coupe">
+
+              <span class="car-status" data-i18n="available">
+                Available
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Add to favorites"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="car-content">
+              <div class="car-heading">
+                <div>
+                  <span class="car-brand">Audi</span>
+                  <h3>Audi TT Coupé</h3>
+                </div>
+
+                <strong data-i18n="priceOnRequest">
+                  Price on request
+                </strong>
+              </div>
+
+              <div class="car-specifications">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  2022
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gauge-high"></i>
+                  41,000 km
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gears"></i>
+                  <span data-i18n="automatic">Automatic</span>
+                </span>
+              </div>
+
+              <a href="#contact" class="car-details-button">
+                <span data-i18n="requestDetails">
+                  Request Details
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Car 3 -->
+          <article class="car-card reveal">
+            <div class="car-image">
+              <img src="images/3.jpg" alt="BMW 5 Series">
+
+              <span class="car-status" data-i18n="available">
+                Available
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Add to favorites"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="car-content">
+              <div class="car-heading">
+                <div>
+                  <span class="car-brand">BMW</span>
+                  <h3>BMW 5 Series</h3>
+                </div>
+
+                <strong data-i18n="priceOnRequest">
+                  Price on request
+                </strong>
+              </div>
+
+              <div class="car-specifications">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  2021
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gauge-high"></i>
+                  57,000 km
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gears"></i>
+                  <span data-i18n="automatic">Automatic</span>
+                </span>
+              </div>
+
+              <a href="#contact" class="car-details-button">
+                <span data-i18n="requestDetails">
+                  Request Details
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Car 4 -->
+          <article class="car-card reveal">
+            <div class="car-image">
+              <img src="images/4.jpg" alt="Audi A5 Coupe">
+
+              <span class="car-status" data-i18n="available">
+                Available
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Add to favorites"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="car-content">
+              <div class="car-heading">
+                <div>
+                  <span class="car-brand">Audi</span>
+                  <h3>Audi A5 Coupé</h3>
+                </div>
+
+                <strong data-i18n="priceOnRequest">
+                  Price on request
+                </strong>
+              </div>
+
+              <div class="car-specifications">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  2020
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gauge-high"></i>
+                  68,000 km
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gears"></i>
+                  <span data-i18n="automatic">Automatic</span>
+                </span>
+              </div>
+
+              <a href="#contact" class="car-details-button">
+                <span data-i18n="requestDetails">
+                  Request Details
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Car 5 -->
+          <article class="car-card reveal">
+            <div class="car-image">
+              <img src="images/5.jpg" alt="Mercedes-Benz E-Class Coupe">
+
+              <span class="car-status" data-i18n="available">
+                Available
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Add to favorites"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="car-content">
+              <div class="car-heading">
+                <div>
+                  <span class="car-brand">Mercedes-Benz</span>
+                  <h3>Mercedes E-Class Coupé</h3>
+                </div>
+
+                <strong data-i18n="priceOnRequest">
+                  Price on request
+                </strong>
+              </div>
+
+              <div class="car-specifications">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  2022
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gauge-high"></i>
+                  39,000 km
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gears"></i>
+                  <span data-i18n="automatic">Automatic</span>
+                </span>
+              </div>
+
+              <a href="#contact" class="car-details-button">
+                <span data-i18n="requestDetails">
+                  Request Details
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- Car 6 -->
+          <article class="car-card reveal">
+            <div class="car-image">
+              <img src="images/6.jpg" alt="Mercedes-Benz C-Class Coupe">
+
+              <span class="car-status" data-i18n="available">
+                Available
+              </span>
+
+              <button
+                class="favorite-button"
+                type="button"
+                aria-label="Add to favorites"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="car-content">
+              <div class="car-heading">
+                <div>
+                  <span class="car-brand">Mercedes-Benz</span>
+                  <h3>Mercedes C-Class Coupé</h3>
+                </div>
+
+                <strong data-i18n="priceOnRequest">
+                  Price on request
+                </strong>
+              </div>
+
+              <div class="car-specifications">
+                <span>
+                  <i class="fa-regular fa-calendar"></i>
+                  2021
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gauge-high"></i>
+                  52,000 km
+                </span>
+
+                <span>
+                  <i class="fa-solid fa-gears"></i>
+                  <span data-i18n="automatic">Automatic</span>
+                </span>
+              </div>
+
+              <a href="#contact" class="car-details-button">
+                <span data-i18n="requestDetails">
+                  Request Details
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="cars-note reveal">
+          <i class="fa-solid fa-circle-info"></i>
+
+          <p data-i18n="carsNote">
+            Vehicle specifications shown are for presentation purposes
+            and can be replaced with the final inventory information.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         Services
+    ========================== -->
+    <section class="services section" id="services">
+      <div class="container">
+
+        <div class="section-heading services-heading reveal">
+          <div>
+            <div class="section-label">
+              <span></span>
+              <p data-i18n="servicesLabel">
+                Workshop Services
+              </p>
+            </div>
+
+            <h2 data-i18n="servicesTitle">
+              Professional Care for Every Kilometer.
+            </h2>
+          </div>
+
+          <p data-i18n="servicesDescription">
+            From regular maintenance to advanced diagnostics,
+            our workshop keeps your vehicle safe, reliable and performing
+            at its best.
+          </p>
+        </div>
+
+        <div class="services-layout">
+
+          <article class="service-large reveal">
+            <img
+              src="images/خدمات 1.jpg"
+              alt="Engine repair"
+            >
+
+            <div class="service-overlay"></div>
+
+            <div class="service-content">
+              <span>01</span>
+
+              <div>
+                <h3 data-i18n="engineRepairTitle">
+                  Engine Repair & Maintenance
+                </h3>
+
+                <p data-i18n="engineRepairText">
+                  Professional inspection, maintenance and repair
+                  to preserve your vehicle's performance.
+                </p>
+              </div>
+
+              <a href="#contact" aria-label="Contact us">
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <div class="services-side">
+
+            <article class="service-small reveal">
+              <img
+                src="images/خدمات 2.jpg"
+                alt="Automotive diagnostics"
+              >
+
+              <div class="service-overlay"></div>
+
+              <div class="service-content">
+                <span>02</span>
+
+                <div>
+                  <h3 data-i18n="diagnosticsTitle">
+                    Computer Diagnostics
+                  </h3>
+
+                  <p data-i18n="diagnosticsText">
+                    Accurate fault detection using modern diagnostic equipment.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-info reveal">
+              <div class="service-info-icon">
+                <i class="fa-solid fa-car-burst"></i>
+              </div>
+
+              <span>03</span>
+
+              <h3 data-i18n="inspectionTitle">
+                Vehicle Inspection
+              </h3>
+
+              <p data-i18n="inspectionText">
+                Complete vehicle checks before purchase, sale or long journeys.
+              </p>
+
+              <a href="#contact">
+                <span data-i18n="scheduleService">
+                  Schedule Service
+                </span>
+
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="service-features">
+
+          <div class="service-feature reveal">
+            <i class="fa-solid fa-oil-can"></i>
+
+            <div>
+              <h3 data-i18n="oilServiceTitle">
+                Oil & Filter Service
+              </h3>
+
+              <p data-i18n="oilServiceText">
+                Regular maintenance using quality parts and fluids.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-feature reveal">
+            <i class="fa-solid fa-compact-disc"></i>
+
+            <div>
+              <h3 data-i18n="brakeServiceTitle">
+                Brake Service
+              </h3>
+
+              <p data-i18n="brakeServiceText">
+                Inspection and replacement for confident braking.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-feature reveal">
+            <i class="fa-solid fa-car-battery"></i>
+
+            <div>
+              <h3 data-i18n="electricalServiceTitle">
+                Electrical Systems
+              </h3>
+
+              <p data-i18n="electricalServiceText">
+                Battery, charging and electrical system diagnostics.
+              </p>
+            </div>
+          </div>
+
+          <div class="service-feature reveal">
+            <i class="fa-solid fa-temperature-arrow-down"></i>
+
+            <div>
+              <h3 data-i18n="airConditioningTitle">
+                Air Conditioning
+              </h3>
+
+              <p data-i18n="airConditioningText">
+                Inspection, refilling and repair of climate systems.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         Why Us
+    ========================== -->
+    <section class="why-us section">
+      <div class="container why-us-grid">
+
+        <div class="why-content reveal">
+          <div class="section-label">
+            <span></span>
+            <p data-i18n="whyLabel">Why Choose Us</p>
+          </div>
+
+          <h2 data-i18n="whyTitle">
+            Built on Trust. Driven by Quality.
+          </h2>
+
+          <p data-i18n="whyDescription">
+            Buying or maintaining a vehicle should feel clear and
+            straightforward. We focus on honest communication,
+            professional workmanship and long-term customer relationships.
+          </p>
+
+          <div class="why-list">
+
+            <div>
+              <i class="fa-solid fa-check"></i>
+
+              <span data-i18n="whyOne">
+                Carefully selected premium vehicles
+              </span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-check"></i>
+
+              <span data-i18n="whyTwo">
+                Transparent information and personal advice
+              </span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-check"></i>
+
+              <span data-i18n="whyThree">
+                Professional and experienced technicians
+              </span>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-check"></i>
+
+              <span data-i18n="whyFour">
+                Modern workshop and diagnostic technology
+              </span>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="why-image reveal">
+          <img
+            src="images/كراج 2.jpg"
+            alt="Modern automotive workshop"
+          >
+
+          <div class="quality-card">
+            <i class="fa-solid fa-award"></i>
+
+            <div>
+              <strong data-i18n="qualityTitle">
+                Premium Quality
+              </strong>
+
+              <span data-i18n="qualityText">
+                In every vehicle and every service
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================
+         Contact
+    ========================== -->
+    <section class="contact section" id="contact">
+      <div class="container">
+
+        <div class="contact-box reveal">
+
+          <div class="contact-content">
+            <div class="section-label light-label">
+              <span></span>
+              <p data-i18n="contactLabel">Contact Us</p>
+            </div>
+
+            <h2 data-i18n="contactTitle">
+              Ready to Find Your Next Car?
+            </h2>
+
+            <p data-i18n="contactDescription">
+              Contact our team for vehicle information,
+              availability or workshop appointments.
+            </p>
+
+            <div class="contact-buttons">
+
+              <!-- غيّر الرقم لاحقاً -->
+              <a
+                href="https://wa.me/31600000000"
+                class="whatsapp-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <span data-i18n="whatsappText">
+                  Contact on WhatsApp
+                </span>
+              </a>
+
+              <!-- غيّر الرقم لاحقاً -->
+              <a href="tel:+31600000000" class="phone-button">
+                <i class="fa-solid fa-phone"></i>
+
+                <span>+31 6 00 00 00 00</span>
+              </a>
+
+            </div>
+          </div>
+
+          <div class="contact-information">
+
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+
+              <div>
+                <span data-i18n="addressLabel">Address</span>
+                <strong data-i18n="addressValue">
+                  Amsterdam, Netherlands
+                </strong>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+
+              <div>
+                <span data-i18n="emailLabel">Email</span>
+                <strong>info@prestigemotors.nl</strong>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="fa-regular fa-clock"></i>
+
+              <div>
+                <span data-i18n="workingHoursLabel">
+                  Working Hours
+                </span>
+
+                <strong data-i18n="workingHoursValue">
+                  Monday – Saturday: 08:00 – 18:00
+                </strong>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================
+       Footer
+  ========================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <div class="logo-icon">P</div>
+
+          <div class="logo-text">
+            <strong>PRESTIGE</strong>
+            <span>MOTORS</span>
+          </div>
+        </a>
+
+        <p data-i18n="footerDescription">
+          Premium vehicles and professional automotive service
+          in one trusted destination.
+        </p>
+
+        <div class="social-links">
+
+          <a
+            href="#"
+            aria-label="Instagram"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a
+            href="#"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="#"
+            aria-label="TikTok"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+
+          <a
+            href="#"
+            aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h3 data-i18n="footerNavigation">Navigation</h3>
+
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#cars" data-i18n="navCars">Cars</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <h3 data-i18n="footerServices">Services</h3>
+
+        <a href="#services" data-i18n="engineRepairTitle">
+          Engine Repair & Maintenance
+        </a>
+
+        <a href="#services" data-i18n="diagnosticsTitle">
+          Computer Diagnostics
+        </a>
+
+        <a href="#services" data-i18n="inspectionTitle">
+          Vehicle Inspection
+        </a>
+
+        <a href="#services" data-i18n="oilServiceTitle">
+          Oil & Filter Service
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <h3 data-i18n="footerContact">Contact</h3>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          +31 6 00 00 00 00
+        </p>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          info@prestigemotors.nl
+        </p>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Amsterdam, Netherlands
+        </p>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>
+          © <span id="currentYear"></span> Prestige Motors.
+          <span data-i18n="rightsReserved">
+            All rights reserved.
+          </span>
+        </p>
+
+        <p>
+          <span data-i18n="designedBy">Website designed by</span>
+          <strong>Ahmad Al Kassab</strong>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- زر واتساب عائم -->
+  <a
+    href="https://wa.me/31600000000"
+    class="floating-whatsapp"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- زر العودة للأعلى -->
+  <button
+    class="back-to-top"
+    id="backToTop"
+    type="button"
+    aria-label="Back to top"
+  >
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
