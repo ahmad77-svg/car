@@ -326,7 +326,7 @@ const favoriteButtons = document.querySelectorAll(".favorite-button");
 window.addEventListener("load", () => {
   window.setTimeout(() => {
     loader.classList.add("hidden");
-  },300);
+  },0);
 });
 
 /* =========================
